@@ -215,7 +215,7 @@ namespace GameEngine
                 }
                 if (p1_posY >= 537)
                 {
-                    room = 0;
+                    room = 1;
                     p1_posY = 450;
                 }
             }
@@ -302,13 +302,13 @@ namespace GameEngine
                 }
                 if (p1_posX <= 0)
                 {
-                    room = 17;
-                    p1_posX = 1200;
+                    room = 3;
+                    p1_posX = 0;
                 }
                 if (p1_posX >= 1200)
                 {
-                    room = 4;
-                    p1_posX = 0;
+                    room = 3;
+                    p1_posX = 1200;
                 }
                 if (p1_posY >= 537)
                 {
@@ -346,7 +346,7 @@ namespace GameEngine
                 }
                 if (p1_posX <= 0)
                 {
-                    room = 17;
+                    room = 4;
                     p1_posX = 1200;
                 }
                 if (p1_posX >= 1200)
@@ -409,7 +409,7 @@ namespace GameEngine
                 }
                 if (p1_posY >= 537)
                 {
-                    room = 0;
+                    room = 6;
                     p1_posY = 450;
                 }
             }
