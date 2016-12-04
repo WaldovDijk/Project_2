@@ -1,0 +1,54 @@
+D:\Project 2\League\League\bin\Debug\League.exe.config
+D:\Project 2\League\League\obj\Debug\League.csprojResolveAssemblyReference.cache
+D:\Project 2\League\League\bin\Debug\libmp3lame.32.dll
+D:\Project 2\League\League\bin\Debug\libmp3lame.64.dll
+D:\Project 2\League\League\bin\Debug\League.exe
+D:\Project 2\League\League\bin\Debug\League.pdb
+D:\Project 2\League\League\bin\Debug\NAudio.dll
+D:\Project 2\League\League\bin\Debug\NAudio.Lame.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.D3DCompiler.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.Desktop.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.Diagnostics.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.Direct2D1.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.Direct3D11.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.DXGI.dll
+D:\Project 2\League\League\bin\Debug\SharpDX.Mathematics.dll
+D:\Project 2\League\League\bin\Debug\NAudio.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.D3DCompiler.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.Desktop.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.Diagnostics.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.Direct2D1.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.Direct3D11.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.DXGI.xml
+D:\Project 2\League\League\bin\Debug\SharpDX.Mathematics.xml
+D:\Project 2\League\League\obj\Debug\League.exe
+D:\Project 2\League\League\obj\Debug\League.pdb
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\League.exe.config
+C:\Users\Myself\Desktop\GitProject\League\League\obj\Debug\League.exe
+C:\Users\Myself\Desktop\GitProject\League\League\obj\Debug\League.pdb
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\libmp3lame.32.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\libmp3lame.64.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\League.exe
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\League.pdb
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\NAudio.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\NAudio.Lame.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.D3DCompiler.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Desktop.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Diagnostics.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.DXGI.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Mathematics.dll
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\NAudio.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.D3DCompiler.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Desktop.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Diagnostics.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Direct2D1.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Direct3D11.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.DXGI.xml
+C:\Users\Myself\Desktop\GitProject\League\League\bin\Debug\SharpDX.Mathematics.xml
+C:\Users\Myself\Desktop\GitProject\League\League\obj\Debug\League.csprojResolveAssemblyReference.cache
