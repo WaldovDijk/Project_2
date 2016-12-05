@@ -476,11 +476,11 @@ namespace GameEngine
                 stuk.Update(3, 2, 17, 3, 2);
                 stuk.Update(3, 3, 18, 3, 3);
                 stuk.Update(3, 4, 19, 3, 4);
-                stuk.Update(4, 0, 20, 3, 0);
-                stuk.Update(4, 1, 21, 3, 1);
-                stuk.Update(4, 2, 22, 3, 2);
-                stuk.Update(4, 3, 23, 3, 3);
-                stuk.Update(4, 4, 24, 3, 4);
+                stuk.Update(4, 0, 20, 4, 0);
+                stuk.Update(4, 1, 21, 4, 1);
+                stuk.Update(4, 2, 22, 4, 2);
+                stuk.Update(4, 3, 23, 4, 3);
+                stuk.Update(4, 4, 24, 4, 4);
 
                 Puzzeltje.SetActive(false);
             }
@@ -557,9 +557,12 @@ namespace GameEngine
 
                 }
                 m_GameEngine.FillRectangle(p1_posX, p1_posY, 80, 230);
-                m_GameEngine.DrawString("" + p1_posX + ".", 10, 10, 200, 10);
-                m_GameEngine.DrawString("" + p1_posY + ".", 10, 30, 200, 10);
-                m_GameEngine.DrawString("" + room + ".", 10, 50, 200, 10);
+                //m_GameEngine.DrawString("" + p1_posX + ".", 10, 10, 200, 10);
+                //m_GameEngine.DrawString("" + p1_posY + ".", 10, 30, 200, 10);
+                m_GameEngine.DrawString("Movement:" , 10, 10, 200, 10);
+                m_GameEngine.DrawString("Up, Down, Right, Left.", 130, 5, 400, 10);
+                m_GameEngine.DrawString("W, S, D, A.", 130, 25, 200, 10);
+                m_GameEngine.DrawString("room: " + room + ".", 10, 50, 200, 10);
 
                 m_GameEngine.SetColor(139, 0, 0);
                 m_GameEngine.FillRectangle(xPositie + 4, yPositie - 2, 10, 3);

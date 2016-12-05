@@ -17,7 +17,9 @@ namespace GameEngine
         private int move;
         private int LockedX;
         private int LockedY;
+        private int win = 0;
         private Bitmap Orb = new Bitmap("Orb.png");
+        private Bitmap MiniOrb = new Bitmap("Mini_orb.png");
         private int i;
         private int[,] CurrentX = new int[5,5];
         private int[,] CurrentY = new int[5,5];
@@ -141,66 +143,82 @@ namespace GameEngine
 
 
                 }
-                
+            if (Snap[0] == true && Snap[1] == true && Snap[2] == true && Snap[3] == true && Snap[4] == true && Snap[5] == true && Snap[6] == true && Snap[7] == true && Snap[8] == true && Snap[9] == true && Snap[10] == true && Snap[11] == true && Snap[12] == true && Snap[13] == true && Snap[14] == true && Snap[15] == true && Snap[16] == true && Snap[17] == true && Snap[18] == true && Snap[19] == true && Snap[20] == true && Snap[21] == true && Snap[22] == true && Snap[23] == true && Snap[24] == true )
+            {
+                win = 1;
+            }
         }
         public void Paint()
         {
-            //m_GameEngine.SetColor(255, 215, 80);
-            m_GameEngine.SetColor(0, 0, 0);
-            m_GameEngine.SetColor(255, 215, 80);
-            m_GameEngine.FillRectangle(700, 150, 501, 501);
-            m_GameEngine.SetColor(0, 0, 0);
-            m_GameEngine.DrawRectangle(700, 150, 502, 502);
-            //1,1
-            m_GameEngine.DrawBitmap(Orb, CurrentX[0,0], CurrentY[0,0], 0, 0, 100, 100);
-            //1,2
-            m_GameEngine.DrawBitmap(Orb, CurrentX[0,1], CurrentY[0,1], 100, 0, 100, 100);
-            //1,3
-            m_GameEngine.DrawBitmap(Orb, CurrentX[0,2], CurrentY[0,2], 200, 0, 100, 100);
-            //1,4
-            m_GameEngine.DrawBitmap(Orb, CurrentX[0,3], CurrentY[0,3], 300, 0, 100, 100);
-            //1,5
-            m_GameEngine.DrawBitmap(Orb, CurrentX[0,4], CurrentY[0,4], 400, 0, 100, 100);
-            //2,1
-            m_GameEngine.DrawBitmap(Orb, CurrentX[1,0], CurrentY[1,0], 0, 100, 100, 100);
-            //2,2
-            m_GameEngine.DrawBitmap(Orb, CurrentX[1,1], CurrentY[1,1], 100, 100, 100, 100);
-            //2,3
-            m_GameEngine.DrawBitmap(Orb, CurrentX[1,2], CurrentY[1,2], 200, 100, 100, 100);
-            //2,4
-            m_GameEngine.DrawBitmap(Orb, CurrentX[1,3], CurrentY[1,3], 300, 100, 100, 100);
-            //2,5
-            m_GameEngine.DrawBitmap(Orb, CurrentX[1,4], CurrentY[1,4], 400, 100, 100, 100);
-            //3,1
-            m_GameEngine.DrawBitmap(Orb, CurrentX[2,0], CurrentY[2,0], 0, 200, 100, 100);
-            //3,2
-            m_GameEngine.DrawBitmap(Orb, CurrentX[2,1], CurrentY[2,1], 100, 200, 100, 100);
-            //3,3
-            m_GameEngine.DrawBitmap(Orb, CurrentX[2,2], CurrentY[2,2], 200, 200, 100, 100);
-            //3,4
-            m_GameEngine.DrawBitmap(Orb, CurrentX[2,3], CurrentY[2,3], 300, 200, 100, 100);
-            //3,5
-            m_GameEngine.DrawBitmap(Orb, CurrentX[2,4], CurrentY[2,4], 400, 200, 100, 100);
-            //4,1
-            m_GameEngine.DrawBitmap(Orb, CurrentX[3,0], CurrentY[3,0], 0, 300, 100, 100);
-            //4,2
-            m_GameEngine.DrawBitmap(Orb, CurrentX[3,1], CurrentY[3,1], 100, 300, 100, 100);
-            //4,3
-            m_GameEngine.DrawBitmap(Orb, CurrentX[3,2], CurrentY[3,2], 200, 300, 100, 100);
-            //4,4
-            m_GameEngine.DrawBitmap(Orb, CurrentX[3,3], CurrentY[3,3], 300, 300, 100, 100);
-            //4,5
-            m_GameEngine.DrawBitmap(Orb, CurrentX[3,4], CurrentY[3,4], 400, 300, 100, 100);
-            //5,1
-            m_GameEngine.DrawBitmap(Orb, CurrentX[4,0], CurrentY[4,0], 0, 400, 100, 100);
-            //5,2
-            m_GameEngine.DrawBitmap(Orb, CurrentX[4,1], CurrentY[4,1], 100, 400, 100, 100);
-            //5,3
-            m_GameEngine.DrawBitmap(Orb, CurrentX[4,2], CurrentY[4,2], 200, 400, 100, 100);
-            //5,
-            m_GameEngine.DrawBitmap(Orb, CurrentX[4,3], CurrentY[4,3], 300, 400, 100, 100);
-            //5,5
-            m_GameEngine.DrawBitmap(Orb, CurrentX[4,4], CurrentY[4,4], 400, 400, 100, 100);
+            if (win == 0)
+            {
+                //m_GameEngine.SetColor(255, 215, 80);
+                m_GameEngine.SetColor(0, 0, 0);
+                m_GameEngine.SetColor(255, 215, 80);
+                m_GameEngine.FillRectangle(699, 149, 502, 502);
+                m_GameEngine.SetColor(0, 0, 0);
+                m_GameEngine.DrawRectangle(699, 149, 502, 502);
+                m_GameEngine.DrawString("room: Complete the puzzle to win.", 10, 10, 500, 10);
+                m_GameEngine.DrawString("Left Mouse to select a piece.", 10, 30, 500, 10);
+                m_GameEngine.DrawString("Right Mouse to place the piece.", 10, 50, 500, 10);
+
+                //1,1
+                m_GameEngine.DrawBitmap(Orb, CurrentX[0, 0], CurrentY[0, 0], 0, 0, 100, 100);
+                //1,2
+                m_GameEngine.DrawBitmap(Orb, CurrentX[0, 1], CurrentY[0, 1], 100, 0, 100, 100);
+                //1,3
+                m_GameEngine.DrawBitmap(Orb, CurrentX[0, 2], CurrentY[0, 2], 200, 0, 100, 100);
+                //1,4
+                m_GameEngine.DrawBitmap(Orb, CurrentX[0, 3], CurrentY[0, 3], 300, 0, 100, 100);
+                //1,5
+                m_GameEngine.DrawBitmap(Orb, CurrentX[0, 4], CurrentY[0, 4], 400, 0, 100, 100);
+                //2,1
+                m_GameEngine.DrawBitmap(Orb, CurrentX[1, 0], CurrentY[1, 0], 0, 100, 100, 100);
+                //2,2
+                m_GameEngine.DrawBitmap(Orb, CurrentX[1, 1], CurrentY[1, 1], 100, 100, 100, 100);
+                //2,3
+                m_GameEngine.DrawBitmap(Orb, CurrentX[1, 2], CurrentY[1, 2], 200, 100, 100, 100);
+                //2,4
+                m_GameEngine.DrawBitmap(Orb, CurrentX[1, 3], CurrentY[1, 3], 300, 100, 100, 100);
+                //2,5
+                m_GameEngine.DrawBitmap(Orb, CurrentX[1, 4], CurrentY[1, 4], 400, 100, 100, 100);
+                //3,1
+                m_GameEngine.DrawBitmap(Orb, CurrentX[2, 0], CurrentY[2, 0], 0, 200, 100, 100);
+                //3,2
+                m_GameEngine.DrawBitmap(Orb, CurrentX[2, 1], CurrentY[2, 1], 100, 200, 100, 100);
+                //3,3
+                m_GameEngine.DrawBitmap(Orb, CurrentX[2, 2], CurrentY[2, 2], 200, 200, 100, 100);
+                //3,4
+                m_GameEngine.DrawBitmap(Orb, CurrentX[2, 3], CurrentY[2, 3], 300, 200, 100, 100);
+                //3,5
+                m_GameEngine.DrawBitmap(Orb, CurrentX[2, 4], CurrentY[2, 4], 400, 200, 100, 100);
+                //4,1
+                m_GameEngine.DrawBitmap(Orb, CurrentX[3, 0], CurrentY[3, 0], 0, 300, 100, 100);
+                //4,2
+                m_GameEngine.DrawBitmap(Orb, CurrentX[3, 1], CurrentY[3, 1], 100, 300, 100, 100);
+                //4,3
+                m_GameEngine.DrawBitmap(Orb, CurrentX[3, 2], CurrentY[3, 2], 200, 300, 100, 100);
+                //4,4
+                m_GameEngine.DrawBitmap(Orb, CurrentX[3, 3], CurrentY[3, 3], 300, 300, 100, 100);
+                //4,5
+                m_GameEngine.DrawBitmap(Orb, CurrentX[3, 4], CurrentY[3, 4], 400, 300, 100, 100);
+                //5,1
+                m_GameEngine.DrawBitmap(Orb, CurrentX[4, 0], CurrentY[4, 0], 0, 400, 100, 100);
+                //5,2
+                m_GameEngine.DrawBitmap(Orb, CurrentX[4, 1], CurrentY[4, 1], 100, 400, 100, 100);
+                //5,3
+                m_GameEngine.DrawBitmap(Orb, CurrentX[4, 2], CurrentY[4, 2], 200, 400, 100, 100);
+                //5,
+                m_GameEngine.DrawBitmap(Orb, CurrentX[4, 3], CurrentY[4, 3], 300, 400, 100, 100);
+                //5,5
+                m_GameEngine.DrawBitmap(Orb, CurrentX[4, 4], CurrentY[4, 4], 400, 400, 100, 100);
+
+                m_GameEngine.DrawBitmap(MiniOrb, 400, 10);
+            }
+            if (win == 1)
+            {
+                m_GameEngine.DrawString("YOU WON !!!!!!!!!!!!!!!!!!!!!!!!!!!!", 300, 10, 500, 10);
+            }
 
             m_GameEngine.SetColor(139, 0, 0);
             m_GameEngine.FillRectangle(xPositie + 4, yPositie - 2, 10, 3);
