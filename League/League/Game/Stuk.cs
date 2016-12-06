@@ -103,46 +103,52 @@ namespace GameEngine
             yPositie = muisPositie.Y;
 
             //1,1
-                if (Snap[move] == false && m_Een[move] == false)
+            if (Snap[move] == false && m_Een[move] == false)
+            {
+                if ((xPositie >= CurrentX[x, y] && xPositie <= CurrentX[x, y] + 101) && (yPositie >= CurrentY[x, y] && yPositie <= CurrentY[x, y] + 101))
                 {
-                    if ((xPositie >= CurrentX[x, y] && xPositie <= CurrentX[x, y] + 101) && (yPositie >= CurrentY[x, y] && yPositie <= CurrentY[x, y] + 101))
+                    if (m_GameEngine.GetMouseButtonUp(0) && linksGeklikt[move] == false)
                     {
-                        if (m_GameEngine.GetMouseButtonUp(0) && linksGeklikt[move] == false)
-                        {
-                            linksGeklikt[move] = true;
-                        }
+                        linksGeklikt[move] = true;
                     }
-                    if (linksGeklikt[move] == true)
+                }
+                if (linksGeklikt[move] == true)
+                {
+                    for (i = 0; i < 25; i++)
                     {
+                        m_Een[i] = true;
+                        m_Een[move] = false;
+                    }
+                    CurrentX[x, y] = xPositie - 50;
+                    CurrentY[x, y] = yPositie - 50;
+                    if (m_GameEngine.GetMouseButtonUp(1))
+                    {
+                        CurrentX[x, y] = muisPositie.X - 50;
+                        CurrentY[x, y] = muisPositie.Y - 50;
+                        linksGeklikt[move] = false;
                         for (i = 0; i < 25; i++)
                         {
-                            m_Een[i] = true;
-                            m_Een[move] = false;
+                            m_Een[i] = false;
                         }
-                        CurrentX[x, y] = xPositie - 50;
-                        CurrentY[x, y] = yPositie - 50;
-                        if (m_GameEngine.GetMouseButtonUp(1))
+                        if (((CurrentX[x, y] >= X_Locked[LockedX] && CurrentX[x, y] <= X_Locked[LockedX] + 20) && (CurrentY[x, y] <= Y_Locked[LockedY] && CurrentY[x, y] >= Y_Locked[LockedY] - 20)) || ((CurrentX[x, y] <= X_Locked[LockedX] && CurrentX[x, y] >= X_Locked[LockedX] - 20) && (CurrentY[x, y] <= Y_Locked[LockedY] && CurrentY[x, y] >= Y_Locked[LockedY] - 20)))
                         {
-                            CurrentX[x, y] = muisPositie.X - 50;
-                            CurrentY[x, y] = muisPositie.Y - 50;
-                            linksGeklikt[move] = false;
-                            for (i = 0; i < 25; i++)
-                            {
-                                m_Een[i] = false;
-                            }
-                            if ((CurrentX[x, y] >= X_Locked[LockedX] && CurrentX[x, y] <= X_Locked[LockedX] + 40) && (CurrentY[x, y] >= Y_Locked[LockedY] && CurrentY[x, y] <= Y_Locked[LockedY] + 40))
-                            {
                             CurrentX[x, y] = X_Locked[LockedX];
                             CurrentY[x, y] = Y_Locked[LockedY];
                             Snap[move] = true;
-                            }
                         }
-                        
-
+                        if (((CurrentX[x, y] >= X_Locked[LockedX] && CurrentX[x, y] <= X_Locked[LockedX] + 20) && (CurrentY[x, y] >= Y_Locked[LockedY] && CurrentY[x, y] <= Y_Locked[LockedY] + 20)) || ((CurrentX[x, y] <= X_Locked[LockedX] && CurrentX[x, y] >= X_Locked[LockedX] - 20) && (CurrentY[x, y] >= Y_Locked[LockedY] && CurrentY[x, y] <= Y_Locked[LockedY] + 20)))
+                        {
+                            CurrentX[x, y] = X_Locked[LockedX];
+                            CurrentY[x, y] = Y_Locked[LockedY];
+                            Snap[move] = true;
+                        }
                     }
 
 
                 }
+
+
+            }
             if (Snap[0] == true && Snap[1] == true && Snap[2] == true && Snap[3] == true && Snap[4] == true && Snap[5] == true && Snap[6] == true && Snap[7] == true && Snap[8] == true && Snap[9] == true && Snap[10] == true && Snap[11] == true && Snap[12] == true && Snap[13] == true && Snap[14] == true && Snap[15] == true && Snap[16] == true && Snap[17] == true && Snap[18] == true && Snap[19] == true && Snap[20] == true && Snap[21] == true && Snap[22] == true && Snap[23] == true && Snap[24] == true )
             {
                 win = 1;
